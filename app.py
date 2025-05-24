@@ -8,7 +8,7 @@ import os
 import subprocess
 
 if not os.path.isfile('model_new.keras'):
-    subprocess.run(['curl --output model_new.keras "https://github.com/rashmika-fdo/Stock-Price-Prediction-WebApp/blob/18632af440a3c2a6a6eef84624869f0af724782f/Model3.keras"'], shell=True)
+    subprocess.run(['curl --output model_new.keras "https://raw.githubusercontent.com/rashmika-fdo/Stock-Price-Prediction-WebApp/18632af440a3c2a6a6eef84624869f0af724782f/Model3.keras"'], shell=True)
 model = load_model('model_new.keras', compile=False)
 
 st.header('Stock Price Predictor')
